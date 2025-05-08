@@ -1,0 +1,16 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set_theme(style="whitegrid")
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.figure(figsize=(8, 5))
+sns.lineplot(x=x, y=y)
+
+plt.title("Sine Wave")
+plt.xlabel("X-axis")
+plt.ylabel("Y = sin(x)")
+plt.show()
